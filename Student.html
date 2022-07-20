@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Information</title>
+        <style>
+            body{
+                background-image: url(images/back.webp);
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+            }
+            h1{
+                color: aliceblue;
+                font-size: 100px;
+            }
+            .for{
+                display: flex;
+                padding: 10px;
+            }
+            #box{
+                position: relative;
+                left:30%;
+                top:70px;
+                border-color: black;
+                border-style: solid;
+                background-color: aquamarine;
+                width: 400px;
+                height: 250px;
+            }
+            label{
+                flex: 1;
+            }
+            input
+            {
+                flex: 1;
+            }
+            #submit{
+                border-style: dashed;
+                width: 70px;
+                height: 50px;
+                margin-top: 20px;
+                position: relative;
+                left: 150px;
+                background-color: aquamarine;
+                border-color:black;
+                transition: ease-in;
+                transition-duration: 0.1s;
+                cursor: pointer;
+            }
+
+            #submit:hover{
+                font-weight: 700;
+                background-color:aqua;
+                color:black;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align = "Center" >Student Login</h1>
+        <div id="box"><form action="table.html">
+            <div class="for"><label for="fname">First Name: </label>
+            <input type="text" id="fname"></div>
+            <div class="for"><label for="lname">Last Name: </label>
+            <input type="text" id="lname"></div>
+            <div class="for"><label for="prn">Prn Number: </label>
+            <input type="text" id="prn"></div>
+            <div class="for"><label for="pass">Password: </label>
+            <input type="password" id="pass"></div>
+            <input id="submit" type="submit">
+        </form>
+        </div>
+    </body>
+</html>
